@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
 public class poligonosFunciones {
-
+//Es necesario declarar estas variables globalmente para que puedan usarlas las funciones.
     public static float valor1 = 0;
     public static float valor2 = 0;
+
     public static float triangulo(float n1, float n2) {
         float areaTriangulo = 0;
         areaTriangulo = n1 * n2 / 2;
