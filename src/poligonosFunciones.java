@@ -30,6 +30,7 @@ public class poligonosFunciones {
         return areaHexagono;
     }
 
+    //Esta función va a solicitar un string para saber de qué polígono se trata y adaptar los textos que salen por pantalla.
     public static void solicitarValores(String figura) {
         String n1 = "";
         String n2 = "";
@@ -57,21 +58,21 @@ public class poligonosFunciones {
 
         switch (figura) {
             case "triangulo":
-                solicitarValores("triangulo");
+                solicitarValores(figura); //se podría escribir el string "triangulo" a mano (solicitarValores("triangulo")), pero como tenemos una variable que almacena lo que escribe el usuario se usa directamente.
                 System.out.println("El area del triangulo es " + triangulo(valor1, valor2));
                 break;
             case "rectangulo":
-                solicitarValores("rectangulo");
+                solicitarValores(figura);
                 System.out.println("El area del rectangulo es " + rectangulo(valor1, valor2));
                 break;
 
             case "pentagono":
-                solicitarValores("pentagono");
+                solicitarValores(figura);
                 System.out.println("El area del pentagono es " + pentagono(valor1, valor2));
                 break;
 
             case "hexagono":
-                solicitarValores("hexagono");
+                solicitarValores(figura);
                 System.out.println("El area del hexagono es " + hexagono(valor1, valor2));
                 break;
             default:
